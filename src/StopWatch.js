@@ -4,7 +4,7 @@ import './StopWatch.css';
 const StopWatchWatch = () => {
     return (
         <>
-        <div className="watch-container">
+        <div className="watch-container" >
             <div className="watch">
                 <div className="watch-face">
                     <div className="hand hour-hand"></div>
@@ -14,11 +14,12 @@ const StopWatchWatch = () => {
                 </div>
             </div>
             <div className="controls">
-                <button className="control-button stop-button">Stop</button>
-                <button className="control-button restart-button">Restart</button>
-                <button className="control-button stop-button-only">Stop</button>
+                <button className="control-button stop-button">Start</button>
+                <button className="control-button restart-button">Stop</button>
+                <button className="control-button stop-button-only">Restart</button>
             </div>
         </div>
+
         </>
     );
 };
