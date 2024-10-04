@@ -12,7 +12,11 @@ body {
 
 .watch-container {
   text-align: center;
+  font-size: xx-large;
   
+}
+.time-display{
+  font-size: xx-large;
 }
 
 .watch {

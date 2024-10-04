@@ -22,7 +22,11 @@ const StopWatchWatch = () => {
       clearInterval(intervalRef.current);
     }
   };
-
+  const resetWatch = () => {
+    setIsRunning(false);
+    clearInterval(intervalRef.current);
+    setTime(0); 
+  };
 
   const formatTime = (timeInSeconds) => {
     const minutes = Math.floor(timeInSeconds / 60);
@@ -49,7 +53,7 @@ const StopWatchWatch = () => {
         <div className="controls">
           <button className="control-button stop-button" onClick={startWatch}>Start</button>
           <button className="control-button restart-button" onClick={stopWatch}>Stop</button>
-          <button className="control-button stop-button-only">Restart</button>
+          <button className="control-button stop-button-only" onClick={resetWatch}>Restart</button>
         </div>
       </div>
 
