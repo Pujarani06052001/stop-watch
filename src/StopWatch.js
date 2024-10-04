@@ -46,7 +46,7 @@ const StopWatchWatch = () => {
 
         </>
     );
-};
+}
 
 export default StopWatchWatch;
 
